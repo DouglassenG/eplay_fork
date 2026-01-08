@@ -1,46 +1,56 @@
-# Getting Started with Create React App
+# 🎮 ePlay - Loja de Games Digital
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Status](https://img.shields.io/badge/Status-Concluído-green)
+![React](https://img.shields.io/badge/React-18-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6)
+![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC)
+![Styled Components](https://img.shields.io/badge/Style-Styled_Components-db7093)
 
-## Available Scripts
+> Uma plataforma completa de e-commerce voltada para o nicho de games, oferecendo uma experiência de navegação fluida, catálogo categorizado e gerenciamento de carrinho de compras.
 
-In the project directory, you can run:
+## 💻 Sobre o Projeto
 
-### `npm start`
+O **ePlay** é uma aplicação Single Page Application (SPA) que simula o ecossistema de uma loja de jogos digitais. O foco do projeto foi implementar uma arquitetura escalável capaz de lidar com múltiplas categorias de produtos, promoções e um fluxo de compra intuitivo.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este projeto demonstra a capacidade de integrar interfaces ricas com lógicas de negócio complexas no Front-end, utilizando o ecossistema moderno do React.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ⚙️ Arquitetura e Tecnologias
 
-### `npm test`
+A stack tecnológica foi escolhida visando performance e tipagem estática:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **[React](https://reactjs.org/):** Biblioteca core para construção da interface.
+* **[TypeScript](https://www.typescriptlang.org/):** Utilizado extensivamente para tipar props, estados e respostas da API, garantindo robustez ao código.
+* **[Redux Toolkit](https://redux-toolkit.js.org/):** Gerenciamento de estado global para controlar o carrinho de compras e o status dos pedidos.
+* **[Styled Components](https://styled-components.com/):** Estilização baseada em componentes, permitindo temas globais e manutenção facilitada do CSS.
+* **[React Router DOM](https://reactrouter.com/):** Gerenciamento de rotas (Home, Categorias, Produto Detalhado, Checkout).
+* **[ESLint & Prettier](https://eslint.org/):** Padronização de código e boas práticas.
 
-### `npm run build`
+## 🧩 Funcionalidades Principais
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  **Vitrine Dinâmica:**
+    * Seção de Destaques (Hero Banner).
+    * Listagem de jogos por categorias (Ação, RPG, Esportes, etc.).
+    * Seção de "Em Breve" e "Promoções".
+2.  **Página de Produto:** Detalhes técnicos, galeria de imagens e botão de compra.
+3.  **Carrinho de Compras (Overlay):**
+    * Adição/Remoção de jogos.
+    * Cálculo automático de total.
+4.  **Checkout:**
+    * Formulário de cadastro e endereço.
+    * Validação de dados de pagamento (simulado).
+    * Feedback de sucesso na compra.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Estrutura do Código
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A organização de pastas favorece a separação de responsabilidades:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```text
+src/
+├── components/      # Componentes de UI (Button, Card, Gallery, Hero, etc.)
+├── pages/           # Páginas da aplicação (Home, Categories, Product, Checkout)
+├── models/          # Modelos de dados e Interfaces TypeScript
+├── store/           # Configuração do Redux (Slices de Carrinho e API)
+├── styles/          # Estilos globais (GlobalStyle) e Variáveis de tema
+├── services/        # Configuração de endpoints (API)
+├── utils/           # Formatadores (Preço, Data)
+└── routes.tsx       # Configuração das rotas da aplicação

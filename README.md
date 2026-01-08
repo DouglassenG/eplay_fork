@@ -6,8 +6,6 @@
 ![Redux](https://img.shields.io/badge/Redux-Toolkit-764ABC)
 ![Styled Components](https://img.shields.io/badge/Style-Styled_Components-db7093)
 
-> Uma plataforma completa de e-commerce voltada para o nicho de games, oferecendo uma experiência de navegação fluida, catálogo categorizado e gerenciamento de carrinho de compras.
-
 ## 💻 Sobre o Projeto
 
 O **ePlay** é uma aplicação Single Page Application (SPA) que simula o ecossistema de uma loja de jogos digitais. O foco do projeto foi implementar uma arquitetura escalável capaz de lidar com múltiplas categorias de produtos, promoções e um fluxo de compra intuitivo.
